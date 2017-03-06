@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>canvas写一个字</title>
+<style type="text/css">
+#canvas{ display:block;margin:0 auto; }
+#btns{ position: absolute;top:400px;left:40px;}
+a{
+    float:left;
+	padding:5px;
+	border-radius:4px;
+	color: #999999;
+    border:1px solid #666666;
+	text-decoration:none;
+    }
+a:hover{ background:#CCCCCC;color:#FFFFFF;}
+.sn{ float:left; width:30px; height:30px;border:1px solid #666666;margin:1px 5px;}
+#red_color{ background-color:#FF0000;}
+#green_color{ background-color:#00FF00;}
+#yellow_color{ background-color:#FFFF00;}
+#violet_color{ background-color:#FF00FF;}
+.btn_selected{ border: 1px solid #00FFFF;}
+</style>
+<script type="text/javascript" src="js/writeWord.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/getStyle.js"></script>
+</head>
+
+<body>
+   
+    <canvas id="canvas">
+	您的浏览器不支持canvas
+	</canvas>
+	<div id="btns">
+		<a href="javascript:void(0)">清除</a>
+		<div id="red_color" class="sn btn_selected"></div>
+		<div id="green_color" class="sn"></div>
+		<div id="yellow_color" class="sn"></div>
+		<div id="violet_color" class="sn"></div>
+    </div>
+</body>
+</html>
